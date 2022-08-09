@@ -1,0 +1,108 @@
+:root{  /*tag para definir as cores e reaproveitar no CSS, caso precise alterar no futuro não altera uma por uma*/
+   --branco-principal: #FFFFFF;
+   --cinza-secundario: #C0C0C0;
+   --botao-azull: #167BF7;
+   --cor-de-fundo: #00030C;
+   --fonte-principal: 'inter';  /*tag para reaproveitar fonts assim como as cores*/
+}
+
+body{
+    background-color: var(--cor-de-fundo); /* variável que define a cor de fundo que foi definido no root*/
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal); /*variável para usar a fonta do root*/
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+* {  /* esse seletor define todos os elementos com a config a baixo*/
+    margin: 0;
+    padding: 0;
+}
+
+.container_principal {
+    background-image: url(img/Background.png);  /*colocar a imagem de fundo no CSS, quando o conteúdo não é importante caso a tela não carregue*/
+    background-repeat: no-repeat; /*ao adicionar imagem ela pode repetir, essa tag tira a repetição da imagem*/
+    background-size: contain; /*tag para a imagem preencher melhor a tela(section)*/
+    align-items: center; /* Alinha os itens ao centro da coluna do grid*/
+    text-align: center;
+}
+
+.container_principal {  /*segunda classe na imagem para poder alterar a imagem no css. a tag embaixo é para que identificar a altura da imamegm e preencher 100% da tela.*/
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 50% 50%;  /*definir o template(toda a div) como coluna na tela, o botão vai ocupar a coluna definida 50% igual a duas coluna*/
+}
+
+.container__botao{ /*configuração do botão azul do curso da alura*/
+    background-color: var(--botao-azull);
+    padding: 1em;
+    border-radius: 8px;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none; /*tirar o sublinhado do texto*/
+    margin-bottom: 1em;
+}
+
+.botao_secundario{  /*estilizar o diferencial do botão secundario*/
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 10px;
+    color: var(--cinza-secundario);
+    text-align: center;
+}    
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin:  1em 0 2em 0; 
+}
+
+.container__caixa{
+    margin: 0 10em;
+}
+
+.container_secundario{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.secundario__imagem{
+    margin: 0 0 0 30%;
+    width: 55%;
+}
+
+.titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.descricao{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0.5em 5em 0 0;
+    color: var(--cinza-secundario);
+    align-items: center;
+}
+
+.botao_alternativo{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.secundario_imagem{
+    margin: 0 40% 0 0;
+    width: 60%;
+}
+
+.container_descricao{
+    margin-left: 5em;
+}
