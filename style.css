@@ -3,6 +3,7 @@
    --cinza-secundario: #C0C0C0;
    --botao-azull: #167BF7;
    --cor-de-fundo: #00030C;
+   --cor-do-cliquebotao: #16b0f7;
    --fonte-principal: 'inter';  /*tag para reaproveitar fonts assim como as cores*/
 }
 
@@ -105,4 +106,72 @@ body{
 
 .container_descricao{
     margin-left: 5em;
+}
+
+.container_curso{
+    color: var(--cinza-secundario);
+}
+
+.dispositivos_titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+
+}
+
+.dispositivos_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 3em 0;
+}
+
+.dispositivos{
+    text-align: center;
+    
+}
+
+.lista_item{
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--branco-principal);
+}
+
+
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.lis_link a{
+    padding: 2em 1em;
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape_texto{
+    text-align: center;
+    margin: 2em 6em ;
+    font-size: 14px;
+}
+
+.logo{
+    align-items: center;
+
+}
+
+.lis_link a:hover{
+    color: var(--botao-azull);
+}
+
+.lis_link a:active{
+    color: rgb(83, 221, 255);
+}
+
+.container__botao:hover{
+    background-color: #16b0f7;
+    color:#00030C;
 }
